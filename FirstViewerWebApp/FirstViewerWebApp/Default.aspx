@@ -92,7 +92,6 @@
 
     <script type="text/javascript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
     <script src="Scripts/BasicExtension.js"></script>
-    <script src="Scripts/Autodesk.ADN.Viewing.Extension.PropertyPanel.js"></script>
     <script src="Scripts/Viewer.js"></script>
 
 

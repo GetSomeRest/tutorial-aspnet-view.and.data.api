@@ -1,4 +1,5 @@
-﻿//(function () {
+﻿//(function () {  //comment out this closure so that you can type variables in 
+                  //console of broswer to do debuggin
  
     var viewer;
 
@@ -21,8 +22,7 @@
         var viewerElement = document.getElementById('viewer');
 
         viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {
-            extensions: ['BasicExtension',
-                        'Autodesk.ADN.Viewing.Extension.PropertyPanel']
+            extensions: ['BasicExtension']
         });
         
 

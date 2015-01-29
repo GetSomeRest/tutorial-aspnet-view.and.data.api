@@ -62,7 +62,6 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="GetAccessToken.aspx" />
-    <Content Include="Scripts\Autodesk.ADN.Viewing.Extension.PropertyPanel.js" />
     <Content Include="Scripts\BasicExtension.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
