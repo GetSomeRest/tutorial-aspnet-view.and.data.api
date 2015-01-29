@@ -11,7 +11,7 @@ This sample uses the [RestSharp](http://restsharp.org/) library. You can add it 
 
 ##Setup/Usage Instructions
 
-Please refer to the [handout.pdf](handsout.pdf)
+Please refer to the [handsout.pdf](handsout.pdf)
 
 ## License
 
