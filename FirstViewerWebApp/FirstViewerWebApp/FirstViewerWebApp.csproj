@@ -60,6 +60,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AnotherSamplePage.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="GetAccessToken.aspx" />
     <Content Include="Scripts\BasicExtension.js" />
@@ -69,6 +70,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnotherSamplePage.aspx.cs">
+      <DependentUpon>AnotherSamplePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnotherSamplePage.aspx.designer.cs">
+      <DependentUpon>AnotherSamplePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Credentials.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
