@@ -1,5 +1,5 @@
 ﻿//(function () {  //comment out this closure so that you can type variables in 
-                  //console of broswer to do debuggin
+                  //console of browser to do debugging
  
     var viewer;
 
@@ -84,30 +84,12 @@
 
     $('#nav1').click(function () {
         
-        viewer.navigation.toPerspective();
 
-        var camera = viewer.navigation.getCamera();
-        var position = new THREE.Vector3(camera.position.x, camera.position.y,camera.position.z + 5);
-        var target = camera.target;//new THREE.Vector3();
-        viewer.navigation.setView(position,target);
-
-        console.log(position);
     });
 
     $('#nav2').click(function () {
 
-        viewer.navigation.toPerspective();
 
-        var camera = viewer.navigation.getCamera();
-        var position = new THREE.Vector3(camera.position.x, camera.position.y, camera.position.z - 5);
-
-        var target = camera.target;//new THREE.Vector3();
-        viewer.navigation.setView(position, target);
-
-        //viewer.navigation.setCameraUpVector(viewer.navigation.getWorldUpVector());
-        //viewer.navigation.setWorldUpVector(viewer.navigation.getWorldUpVector(), true);
-
-        console.log(position);
 
     });
 

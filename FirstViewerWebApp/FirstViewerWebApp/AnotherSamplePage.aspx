@@ -31,7 +31,7 @@
         var urn = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwtYXMtYS1zZXJ2aWNlMjAxNTAxMjYvU3VzcGVuc2lvbi5kd2Y=';
         $(document).ready(function () {
             var adnViewerMng = new Autodesk.ADN.Toolkit.Viewer.AdnViewerManager(
-                'https://still-spire-1606.herokuapp.com/api/token',
+                'https://still-spire-1606.herokuapp.com/api/rawtoken',
                 document.getElementById('viewerDiv'));
             var paramUrn = Autodesk.Viewing.Private.getParameterByName('urn');
             urn = (paramUrn !== '' ? paramUrn : urn);
