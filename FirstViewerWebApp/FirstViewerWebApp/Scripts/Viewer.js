@@ -54,10 +54,8 @@
 
     // This method returns a valid access token 
     function getToken() {
-        // This method should fetch a token from a service you create to provide authentication.
-        // See the ADN Samples for examples of how to create such a service.  For example, see
-        // https://github.com/Developer-Autodesk/workflow-aspnet-webform-view.and.data.api/blob/master/ViewAndShare/ViewAndShare/GetAccessToken.ashx.cs
-        // This method might look something like:
+        // This method should fetch a token from a service you created to provide authentication.
+
         var xmlHttp = null;
         xmlHttp = new XMLHttpRequest();
         xmlHttp.open("GET", "GetAccessToken.aspx", false);
@@ -82,16 +80,7 @@
         initialize();
     });
 
-    $('#nav1').click(function () {
-        
-
-    });
-
-    $('#nav2').click(function () {
-
-
-
-    });
+  
 
 
 

@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-//declare your namespaces
+//declare your name spaces
 AutodeskNamespace('MyCommpany.Extensions');
 
 

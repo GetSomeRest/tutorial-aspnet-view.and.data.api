@@ -47,7 +47,7 @@
 
                             <h1>Autodesk View and Data API</h1>
                             <p class="lead">
-                                Vibrant 3D graphics in a Web Broswer!
+                                Vibrant 3D graphics in a Web browser!
                             </p>
 
 
@@ -57,12 +57,7 @@
                     </td>
 
                 </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-primary" id="nav1">nav1</button>
-                         <button class="btn btn-primary" id="nav2">nav2</button>
-                    </td>
-                </tr>
+                
 
             </table>
 
