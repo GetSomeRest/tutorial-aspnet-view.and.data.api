@@ -17,14 +17,14 @@ This repository include two projects, FirstViewerWebApp is the completed sample,
 
 * Apply your own credentials from http://developer.autodesk.com
 * Open FirstViewerWebApp.sln in FirstViewerWebApp folder
-* Replace the place holder of consumer key and secret key in credentials.cs
+* Replace the place holders of consumer key and secret key in credentials.cs
 * Upload one of your model in your account and get its URN using other workflow sample,for example, [this workflow sample in .net winform application](https://github.com/Developer-Autodesk/workflow-dotnet-winform-view.and.data.api/) , you may refer to [handsout.pdf](handsout.pdf) if you do not how to use this workflow sample. 
 * Get your model urn from the workflow sample, and copy this URN. 
 * In script/viewer.js, replace the value for "urn" with your URN, around line #10(optional).
 * Build and run the sample, paste your URN into the text box on page, and press "Load Model" button to load the model.
 
 
-FirstViewerWebApp - exercise is the uncompleted version, you can do the exercise to complete the sample by following the [handsout.pdf](handsout.pdf).
+"FirstViewerWebApp - exercise" is the uncompleted version, you can do the exercise to complete the sample yourself by following the [handsout.pdf](handsout.pdf).
 
 
 ## License
