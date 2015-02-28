@@ -1,4 +1,8 @@
-﻿'use strict';
+﻿// This is a sample extension, which demos how to get the properties 
+// of selected elements
+
+
+'use strict';
 
 //declare your name spaces
 AutodeskNamespace('MyCommpany.Extensions');
@@ -22,7 +26,7 @@ MyCommpany.Extensions.BasicExtension.prototype.load = function () {
     console.dir(oViewer);
     
 
-    oViewer.addEventListener('selection', function (event) {
+    oViewer.addEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, function (event) {
         var dbIdArray = event.dbIdArray;
 
         for (var i = 0; i < dbIdArray.length; i++) {
@@ -35,6 +39,8 @@ MyCommpany.Extensions.BasicExtension.prototype.load = function () {
                     for (var i = 0; i < result.properties.length; i++) {
 
                         var prop = result.properties[i];
+
+                        //output the property name and value to console of browser
 
                         console.log(prop.displayName + ' : ' + prop.displayValue);
 

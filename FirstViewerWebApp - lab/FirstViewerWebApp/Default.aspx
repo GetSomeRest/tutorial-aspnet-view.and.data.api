@@ -29,7 +29,12 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-    <!-- viewer-->
+    <!-- style sheet of viewer -->
+    
+
+
+
+
 
 
 </head>
@@ -66,6 +71,7 @@
         </div>
         <div class="row fill">
             <div class="col-lg-12 fill ">
+                <!--The viewer container -->
                 <div id="viewer"></div>
             </div>
         </div>
@@ -85,8 +91,16 @@
     <script src="Scripts/jquery-1.9.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 
-    <!--Javascript for viewer-->
+    <!--JS library of viewer-->
+ 
 
+
+
+
+
+    <!--A basic extension sample-->
+    <script src="Scripts/BasicExtension.js"></script>
+    <script src="Scripts/Viewer.js"></script>
 
 
 </body>

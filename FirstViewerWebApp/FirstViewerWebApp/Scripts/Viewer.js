@@ -6,6 +6,7 @@
     function initialize() {
 
         var urn = $('#urn').val();
+        //default model urn, you need to change is to your own
         if (urn =='') {
             urn = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6ZGFuaWVsX3RyYW5zbGF0ZV9idWNrZXQzL0RyaWxsLmR3Zng=';
         }
@@ -15,25 +16,37 @@
 
         var options = {
             'document': urn,
-            'getAccessToken': getToken,
-            'refreshToken': getToken,
+            'getAccessToken': getToken, //a function callback which returns access token
+            'refreshToken': getToken, //a function callback which returns access token
         };
 
         var viewerElement = document.getElementById('viewer');
+
+        //Create the viewer object, with some extensions in array
+        //If you do not load any extensions, the second parameter can be 
+        //an empty object {}
 
         viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {
             extensions: ['BasicExtension']
         });
         
 
+        //initializer the viewer 
+
         Autodesk.Viewing.Initializer(options, function () {
+
             viewer.start();
+
+            //load the model document into the viewer
+
             loadDocument(viewer, options.document);
         });
 
 
        
     }
+
+  
 
     function loadDocument(viewer, documentId) {
         // Find the first 3d geometry and load that.
@@ -52,9 +65,10 @@
         });
     }
 
-    // This method returns a valid access token 
+  
+    // This method should fetch a token from a service you created to provide authentication.
     function getToken() {
-        // This method should fetch a token from a service you created to provide authentication.
+        
 
         var xmlHttp = null;
         xmlHttp = new XMLHttpRequest();

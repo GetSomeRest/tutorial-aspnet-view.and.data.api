@@ -23,7 +23,7 @@ This repository includes two projects, FirstViewerWebApp is the completed sample
 * Build and run the sample, paste your URN into the text box on page, and press the "Load Model" button. 
 
 
-"FirstViewerWebApp - exercise" is the uncompleted version, you can do the exercise to complete the sample yourself by following the steps in [handsout.pdf](handsout.pdf).
+"FirstViewerWebApp - lab" is the uncompleted version, you can do the exercise to complete the sample yourself by following the steps in [lab_document.pdf](lab_document.pdf).
 
 
 ## License

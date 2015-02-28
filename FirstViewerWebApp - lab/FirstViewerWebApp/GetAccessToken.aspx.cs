@@ -1,10 +1,5 @@
 ﻿using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace FirstViewerWebApp
 {
@@ -17,7 +12,7 @@ namespace FirstViewerWebApp
         {
 
             RestClient m_client = new RestClient(Credentials.BASE_URL);
-            string accessToken = "" ;
+            string accessToken = "";
 
             RestRequest req = new RestRequest();
             req.Resource = "authentication/v1/authenticate";
