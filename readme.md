@@ -1,9 +1,9 @@
-#Autodesk View and Data API client sample using ASP.NET Webform 
+#Autodesk View and Data API Client Sample using ASP.NET Webform 
 
 
 ##Description
 
-This is an ASP.NET Webform sample that will show you how to embed 3D models into the Autodesk viewer on a web page. 
+This is an ASP.NET Webform sample that shows how to embed 3D models into the Autodesk viewer on a web page. 
 
 ##Dependencies
 
@@ -13,7 +13,9 @@ This sample does not include the workflow of uploading models. You can use other
 
 ##Setup/Usage Instructions
 
-This repository includes two projects, FirstViewerWebApp is the completed sample, you can set it up using the following steps: 
+This repository includes two projects: FirstViewerWebApp and "FirstViewerWebApp - lab".
+
+FirstViewerWebApp is the completed sample. You can set it up using the following steps: 
 
 * Use your credentials from http://developer.autodesk.com
 * Open FirstViewerWebApp.sln in the FirstViewerWebApp folder
@@ -22,8 +24,7 @@ This repository includes two projects, FirstViewerWebApp is the completed sample
 * Get your model urn from the workflow sample, and copy the URN into script/viewer.js, replace the value for "urn" with your URN, around line #10(optional).
 * Build and run the sample, paste your URN into the text box on page, and press the "Load Model" button. 
 
-
-"FirstViewerWebApp - lab" is the uncompleted version, you can do the exercise to complete the sample yourself by following the steps in [lab_document.pdf](lab_document.pdf).
+"FirstViewerWebApp - lab" is the uncompleted version. As an exercise, you can complete the sample yourself by following the steps described in [lab_document.pdf](lab_document.pdf).
 
 
 ## License
