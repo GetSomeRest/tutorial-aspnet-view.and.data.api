@@ -10,9 +10,8 @@ This is an ASP.NET Webform sample that shows how to embed 3D model into the Auto
 
 ##Dependencies
 
-This sample uses the [RestSharp](http://restsharp.org/) library. You can add it to your project using NuGet in Visual Studio.
-
-To run this sample, you need to use other workflow samples to upload and translate your models. 
+* This sample uses the [RestSharp](http://restsharp.org/) library. You can add it to your project using NuGet in Visual Studio.
+* To run this sample, you need to use other workflow samples to upload and translate your models. 
 
 ##Setup/Usage Instructions
 
