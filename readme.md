@@ -3,13 +3,16 @@
 
 ##Description
 
-This is an ASP.NET Webform sample that shows how to embed 3D models into the Autodesk viewer on a web page. 
+This is an ASP.NET Webform sample that shows how to embed 3D model into the Autodesk viewer on a web page with View and Data Client API. 
+
+* Embed a translated 3D model into a web page
+* Create an extension to display properties when clicking one element
 
 ##Dependencies
 
 This sample uses the [RestSharp](http://restsharp.org/) library. You can add it to your project using NuGet in Visual Studio.
 
-This sample does not include the workflow of uploading models. You can use other workflow samples to upload models. 
+To run this sample, you need to use other workflow samples to upload and translate your models. 
 
 ##Setup/Usage Instructions
 
@@ -20,7 +23,7 @@ FirstViewerWebApp is the completed sample. You can set it up using the following
 * Use your credentials from http://developer.autodesk.com.
 * Open FirstViewerWebApp.sln in the FirstViewerWebApp folder.
 * Replace the consumer key and secret key place holders in credentials.cs.
-* Upload one of your models to your account and retrieve its URN using one of the other workflow samples, such as the [.net winform application](https://github.com/Developer-Autodesk/workflow-dotnet-winform-view.and.data.api/). Please refer to [lab_document.pdf](lab_document.pdf) if you do not how to use this workflow sample. 
+* Upload one of your models to your account and retrieve its URN using one of the other workflow samples, such as the [.net winform application](https://github.com/Developer-Autodesk/workflow-dotnet-winform-view.and.data.api/). Please refer to [lab_document.pdf](lab_document.pdf) if you do not know how to use this workflow sample. 
 * Copy your translated model URN into script/viewer.js, replacing the placeholder value for "urn" with it, around line #10(optional).
 * Build and run the sample, paste your URN into the text box on the page, and press the "Load Model" button. 
 
