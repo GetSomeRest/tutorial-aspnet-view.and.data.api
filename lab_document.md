@@ -90,6 +90,9 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
     function loadDocument(viewer, documentId) {
         // Find the first 3d geometry and load that.
         Autodesk.Viewing.Document.load(documentId, function (doc) {// onLoadCallback
+		
+		
+<b>		
             var geometryItems = [];
             geometryItems = Autodesk.Viewing.Document.getSubItemsWithProperties(
                 doc.getRootItem(), {
@@ -100,38 +103,16 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
             if (geometryItems.length > 0) {
                 viewer.load(doc.getViewablePath(geometryItems[0]));
             }
+</b>			
+			
+			
         }, function (errorMsg) {// onErrorCallback
             alert("Load Error: " + errorMsg);
         });
     }
 
 
-    // This method returns a valid access token
-    function getToken() {
-        // This method should fetch a token from a service you create to provide authentication.
-        // See the ADN Samples for examples of how to create such a service.  For example, see
-        // https://github.com/Developer-Autodesk/workflow-aspnet-webform-view.and.data.api/blob/master/ViewAndShare/ViewAndShare/GetAccessToken.ashx.cs
-        // This method might look something like:
-        var xmlHttp = null;
-        xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", "GetAccessToken.aspx", false);
-        xmlHttp.send(null);
-        var res = xmlHttp.responseText;
-        var newToken = JSON.parse(res);
-
-
-        if (newToken.error) {
-            console.log(newToken.error);
-            return '';
-
-
-        }
-        else {
-            return newToken.access\_token;
-        }
-
-
-    }
+  
 ```
 
 * Go to **Credentials.cs** , replace with your consumer key and secret:
@@ -155,32 +136,22 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
 
 Target: Create a viewer extension to output the properties of selected element on viewer
 
-* Go to **BasicExtension.js** and complete the handler of selection changed event.
+* Go to **BasicExtension.js**, complete the handler of selection changed event.
 ```
 	var dbIdArray = event.dbIdArray;
 
-
 	for (var i = 0; i < dbIdArray.length; i++) {
 
-
 		var dbId = dbIdArray[i];
-
 
 		oViewer.getProperties(dbId, function (result) {
 			if (result.properties) {
 
-
 				for (var i = 0; i < result.properties.length; i++) {
 
-
 					var prop = result.properties[i];
-
-
 					//output the property name and value to console of browser
-
-
 					console.log(prop.displayName + ' : ' + prop.displayValue);
-
 
 				}
 			}
