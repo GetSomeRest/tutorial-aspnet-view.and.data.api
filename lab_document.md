@@ -87,6 +87,7 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
 
 4.Complete the necessary JavaScript functions 
 ```
+<pre>
     function loadDocument(viewer, documentId) {
         // Find the first 3d geometry and load that.
         Autodesk.Viewing.Document.load(documentId, function (doc) {// onLoadCallback
@@ -112,7 +113,7 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
     }
 
 
-  
+</pre>  
 ```
 
 * Go to **Credentials.cs** , replace with your consumer key and secret:
