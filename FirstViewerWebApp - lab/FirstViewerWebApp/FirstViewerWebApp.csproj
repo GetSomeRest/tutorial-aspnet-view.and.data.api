@@ -65,7 +65,7 @@
     <Content Include="GetAccessToken.aspx" />
     <Content Include="Scripts\BasicExtension.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
     <Content Include="Scripts\Viewer.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-1.11.3.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
