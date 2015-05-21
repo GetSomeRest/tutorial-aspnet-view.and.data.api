@@ -83,7 +83,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="Scripts/jquery-1.9.0.min.js"></script>
+    <script src="Scripts/jquery-1.11.3.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 
     <!--JS library of viewer-->
