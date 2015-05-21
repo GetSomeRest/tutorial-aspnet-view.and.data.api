@@ -25,15 +25,16 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
 * Open the web application **FirstViewerWebApp.sln** in "FirstViewerWebApp - exercise" folder
 * Go to **default.aspx** , examine the page layout
 
-  a)Add style sheet of "view and data web service" in <head> </head> tag:
+  - Add style sheet of "view and data web service" in `<head> </head>` tag:
+```
+	<link type="text/css" rel="stylesheet" href="https://viewing.api.autodesk.com/viewingservice/v1/viewers/style.css" />
+```
 
-    <link type="text/css" rel="stylesheet" href="https://viewing.api.autodesk.com/viewingservice/v1/viewers/style.css" />
-
-
-  b)Add JavaScript library, just before </body> :
-
+  - Add JavaScript library, just before `</body>` :
+```
         <!--JS library of viewer-->
     <script type="text/javascript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
+```
 
 * Go to **/Scripts/Viewer.js,** add following JavaScript in the function **Initialize** 
 
