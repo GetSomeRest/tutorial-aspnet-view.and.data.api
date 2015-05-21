@@ -37,7 +37,7 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
 ```
 
 * Go to **/Scripts/Viewer.js,** add following JavaScript in the function **Initialize** 
-
+```
         var urn = $('#urn').val();
        //default model urn, you need to change is to your own
        if (urn =='') {
@@ -83,9 +83,10 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
        });
 
 
+```
 
 4.Complete the necessary JavaScript functions 
-
+```
     function loadDocument(viewer, documentId) {
         // Find the first 3d geometry and load that.
         Autodesk.Viewing.Document.load(documentId, function (doc) {// onLoadCallback
@@ -131,12 +132,14 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
 
 
     }
+```
 
 * Go to **Credentials.cs** , replace with your consumer key and secret:
-
+```
         //replace your consumer key
         public static string CONSUMMER_KEY = "your-consumer-key";
         public static string SECRET_KEY = "your-secret-key";
+```
 
 * Launch the web project; fill in your URN (you get it in step- [prepare viewable model]) and click "load model" button to load the viewer
 
@@ -153,7 +156,7 @@ This repository includes two projects, "FirstViewerWebApp - lab" is the uncomple
 Target: Create a viewer extension to output the properties of selected element on viewer
 
 * Go to **BasicExtension.js** and complete the handler of selection changed event.
-
+```
 	var dbIdArray = event.dbIdArray;
 
 
@@ -183,6 +186,7 @@ Target: Create a viewer extension to output the properties of selected element o
 			}
 		});
 	}
+```
 
 * Debug and fix any issue. Launch the application in Chrome, go to console of Developer tools in Chrome, you should see the message is logged: 
 
