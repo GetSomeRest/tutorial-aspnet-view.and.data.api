@@ -46,6 +46,12 @@ MyCommpany.Extensions.BasicExtension.prototype.load = function () {
 
                     }
                 }
+
+                //get external Id
+                if (result.externalId) {
+                    console.log('[externalId] -- ' + result.externalId);
+                }
+
             });
         }
 

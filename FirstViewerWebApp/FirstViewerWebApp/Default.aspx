@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
     <!-- style sheet of viewer -->
-    <link type="text/css" rel="stylesheet" href="https://viewing.api.autodesk.com/viewingservice/v1/viewers/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://viewing.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.2.15" />
 
 </head>
 <body>
@@ -51,7 +51,7 @@
                             </p>
 
 
-                            <input class="text-primary col-md-10" id="urn" placeholder="urn here ..." />
+                            Model URN : <input class="text-primary col-md-10" id="urn" placeholder="urn here ..." />
                             <button class=" btn btn-primary col-md-2" id="btnLoadModel">Load model</button>
                         </div>
                     </td>
@@ -87,7 +87,8 @@
     <script src="Scripts/bootstrap.min.js"></script>
 
     <!--JS library of viewer-->
-    <script type="text/javascript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
+    <script type="text/javascript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js?v=v1.2.15"></script>
+    <script type="text/javascript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v1.2.15"></script>
     <!--A basic extension sample-->
     <script src="Scripts/BasicExtension.js"></script>
     <script src="Scripts/Viewer.js"></script>
