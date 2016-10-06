@@ -1,3 +1,5 @@
+# Deprecated sample - not maintained anymore (Summer 2016) 
+
 #Autodesk View and Data API Client Sample using ASP.NET Webform 
 
 [![LMV](https://img.shields.io/badge/View%20%26%20Data%20API-v1.2.15-green.svg)](http://developer-autodesk.github.io/)
